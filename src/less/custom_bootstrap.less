@@ -1,0 +1,59 @@
+/*!
+ * Copyright (c) 2014 by Fabian St George All Rights Reserved
+ * fabianstgeorge@gmail.com
+ */
+
+//Structure Base
+//============================
+@import "bootstrap/bootstrap";
+
+//Structure Custom
+//============================
+
+// dropdown background-color and hover color
+.btn-group{
+    &-default{
+		// @dropdown-bg
+    }
+    &-primary{
+        .dropdown-menu{
+            background-color: darken(@brand-primary, 3%) !important;
+
+            li>a{
+                 &:hover,&:focus{
+                     background-color: @brand-primary !important;
+                }
+            }
+        }
+    }
+    &-success{
+        .dropdown-menu{
+            background-color: darken(@brand-success, 3%) !important;
+            li>a{
+                 &:hover,&:focus{
+                     background-color: @brand-success !important;
+                }
+            }
+        }
+    }
+    &-info{
+        .dropdown-menu{
+            background-color: darken(@brand-info, 3%) !important;
+            li>a{
+                 &:hover,&:focus{
+                     background-color: @brand-info !important;
+                }
+            }
+        }
+    }
+    &-warning{
+        .dropdown-menu{
+            background-color: darken(@brand-warning, 3%) !important;
+            li>a{
+                &:hover,&:focus{
+                     background-color: @brand-warning !important;
+                }
+            }
+        }
+    }
+}
